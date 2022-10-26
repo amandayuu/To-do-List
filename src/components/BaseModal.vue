@@ -5,7 +5,11 @@
         <h2>Deseja apagar a tarefa?</h2>
       </div>
       <div class="button-group">
-        <BaseButtonVue label="Apagar" @click-event="$emit('delete-task')" />
+        <BaseButtonVue
+          class="error"
+          label="Apagar"
+          @click-event="$emit('delete-task')"
+        />
         <BaseButtonVue label="Cancelar" @click-event="$emit('close-modal')" />
       </div>
     </div>
@@ -35,6 +39,11 @@ export default {
   .button-group {
     display: flex;
     justify-content: space-evenly;
+
+    .error {
+      background: red;
+      color: #fff;
+    }
   }
 }
 

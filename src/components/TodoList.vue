@@ -97,6 +97,7 @@ export default {
       date: new Date().toISOString().substr(0, 10),
     };
   },
+
   computed: {
     enableButton: function () {
       if (this.currentTask != "") {
@@ -106,6 +107,8 @@ export default {
       }
     },
   },
+
+  watch: {},
   methods: {
     /**
      * Open modal passing index
@@ -319,7 +322,7 @@ export default {
             display: flex;
             align-items: baseline;
             flex-direction: column;
-            // border-bottom: 1px solid #961ef4;
+            border-bottom: 1px solid #961ef4;
             padding: 0 4px;
 
             &:hover {

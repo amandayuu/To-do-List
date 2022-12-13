@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: "/amandayuu.github.io/",
+  publicPath: "/todo-list/",
 };
